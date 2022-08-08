@@ -10,7 +10,6 @@ body{
 
 header{
     background-image: url('./images/cloud.png');
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0, 0, 0, .6);
@@ -21,6 +20,29 @@ header{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
+}
+
+.highlight{
+    color: #f6088a;
+}
+
+.primary-btn{
+    color: #fff;
+    background-image: linear-gradient(90deg, #b80768, #f6088a);
+    outline: 0;
+    border: 0;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 7px 0 #af0c66;
+    position: relative;
+    top: 0;
+}
+
+.primary-btn:active{
+    top: 5px;
+    box-shadow: 0 2px 0 #990b59;
 }
 
 nav{
@@ -45,4 +67,39 @@ nav{
     font-weight: 600;
     display: inline-block;
     padding: 15px;
+}
+
+.banner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 80px);
+}
+
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.banner-left h1{
+    font-size: 45px;
+    color: #fff;
+}
+
+.banner-left p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner-right img{
+    width: 100%;
 }
